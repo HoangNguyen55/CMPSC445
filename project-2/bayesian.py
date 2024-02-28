@@ -51,7 +51,9 @@ def data_preprocessing(file):
     return data
 
 def split_data(data, train_percentage):
-    from random import shuffle 
+    from random import shuffle, seed
+    # set seed so the program is deterministic
+    seed(1099)
     # randomize the list
     shuffle(data)
     ceil = int(len(data) * train_percentage/100)
