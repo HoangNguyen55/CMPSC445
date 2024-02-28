@@ -1,0 +1,47 @@
+Cancer testing:
+
+true positive = 98%
+true negative = 97%
+0.008 of population have cancer
+
+a patient tested positive for cancer, does he actually have it
+
+P(cancer) = 0.008
+P(no cancer) = 0.992
+P(positive | cancer) = 0.98
+P(positive | not cancer) = 0.02
+P(negative | cancer) = 0.03
+P(negative | not cancer) = 0.97
+
+P(positive|cancer) * P(cancer) = 0.0078
+P(positive|not cancer) * P(cancer) = 0.0298
+
+CPT conditional probaility table
+
+Prior Probability (total in training data)
+P(Yes)  = 6/14
+P(no)   = 8/14
+
+CPT
+color       | yes   | no
+red         | 3/5   | 2/5
+yellow      | 2/5   | 3/5
+black       | 1/4   | 3/4
+
+type        | yes   | no
+Sports      | 5/9   | 4/9
+SUV         | 1/5   | 4/5
+
+origin      | yes   | no
+imported    | 4/6   | 2/6
+domestic    | 2/8   | 6/8
+
+Obervations
+
+        Red SUV Domestic
+        P(Red|yes) * P(SUV|yes) * P(Domestic|yes) * P(yes)
+Yes |   3/5 *   1/5 *   2/8 * 6/14 => 0.0128
+        P(Red|no) * P(SUV|no) * P(Domestic|no) * P(no)
+No  |   2/5 *   4/5 *   6/8 * 8/14 => 0.1371
+
+Red SUV Domestric Not gonna get stolen
